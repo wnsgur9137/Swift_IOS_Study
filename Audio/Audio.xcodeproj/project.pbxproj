@@ -13,6 +13,7 @@
 		6625BAEF286025DF00F16AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6625BAED286025DF00F16AFB /* Main.storyboard */; };
 		6625BAF1286025E100F16AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6625BAF0286025E100F16AFB /* Assets.xcassets */; };
 		6625BAF4286025E100F16AFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6625BAF2286025E100F16AFB /* LaunchScreen.storyboard */; };
+		66535D7B28629FDB00CD2D8D /* audios in Resources */ = {isa = PBXBuildFile; fileRef = 66535D7A28629FDB00CD2D8D /* audios */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,12 @@
 		6625BAF0286025E100F16AFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6625BAF3286025E100F16AFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6625BAF5286025E100F16AFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66535D7A28629FDB00CD2D8D /* audios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = audios; path = "../../example/13장/audios"; sourceTree = "<group>"; };
+		66535D7F2862D35D00CD2D8D /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		66535D802862D35D00CD2D8D /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		66535D812862D35D00CD2D8D /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		66535D822862D35D00CD2D8D /* Sicilian_Breeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sicilian_Breeze.mp3; sourceTree = "<group>"; };
+		66535D832862D35D00CD2D8D /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,8 @@
 		6625BAE6286025DF00F16AFB /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				66535D7A28629FDB00CD2D8D /* audios */,
+				66535D7E2862D35D00CD2D8D /* images */,
 				6625BAE7286025DF00F16AFB /* AppDelegate.swift */,
 				6625BAE9286025DF00F16AFB /* SceneDelegate.swift */,
 				6625BAEB286025DF00F16AFB /* ViewController.swift */,
@@ -65,6 +74,18 @@
 				6625BAF5286025E100F16AFB /* Info.plist */,
 			);
 			path = Audio;
+			sourceTree = "<group>";
+		};
+		66535D7E2862D35D00CD2D8D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				66535D7F2862D35D00CD2D8D /* record.png */,
+				66535D802862D35D00CD2D8D /* stop.png */,
+				66535D812862D35D00CD2D8D /* pause.png */,
+				66535D822862D35D00CD2D8D /* Sicilian_Breeze.mp3 */,
+				66535D832862D35D00CD2D8D /* play.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6625BAF4286025E100F16AFB /* LaunchScreen.storyboard in Resources */,
+				66535D7B28629FDB00CD2D8D /* audios in Resources */,
 				6625BAF1286025E100F16AFB /* Assets.xcassets in Resources */,
 				6625BAEF286025DF00F16AFB /* Main.storyboard in Resources */,
 			);
