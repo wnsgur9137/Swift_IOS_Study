@@ -8,10 +8,17 @@
 import UIKit
 
 class SuguePushViewController: UIViewController {
-
+    
+    @IBOutlet weak var lblName: UILabel!
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("SegueViewController is loaded")
+        if let name = name {
+            self.lblName.text = name
+            self.lblName.sizeToFit()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

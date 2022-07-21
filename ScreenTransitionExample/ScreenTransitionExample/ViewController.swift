@@ -7,8 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SendDataDelegate {
 
+    @IBOutlet weak var lblName: UILabel!
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("ViewController is loaded")
@@ -30,16 +33,33 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnCodePush(_ sender: UIButton) {
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePushViewController") else { return }
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePushViewController") as? CodePushViewController else { return }
+        
+        viewController.name = "JunHyeok"
+        
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func btnCodePresent(_ sender: UIButton) {
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePresentViewController") else { return }
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePresentViewController") as? CodePresentViewController else { return }
         
         viewController.modalPresentationStyle = .fullScreen
-        
+        viewController.name = "JunHyeok"
+        viewController.delegate = self
         self.present(viewController, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? SuguePushViewController {
+            viewController.name = "JunHyeok"
+        } else if let viewController = segue.destination as? SuguePresentViewController {
+            viewController.name = "JunHyeok1"
+        }
+    }
+    
+    func sendData(name: String) {
+        self.lblName.text = name
+        self.lblName.sizeToFit()
     }
 }
 

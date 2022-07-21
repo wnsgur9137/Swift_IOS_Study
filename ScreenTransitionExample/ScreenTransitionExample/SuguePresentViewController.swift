@@ -8,9 +8,16 @@
 import UIKit
 
 class SuguePresentViewController: UIViewController {
+    
+    @IBOutlet weak var lblName: UILabel!
+    var name: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let name = name {
+            self.lblName.text = name
+            self.lblName.sizeToFit()
+        }
     }
     
     @IBAction func btnBackButton(_ sender: UIButton) {
