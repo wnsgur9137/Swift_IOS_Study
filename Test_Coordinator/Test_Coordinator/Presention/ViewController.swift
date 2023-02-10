@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController, Storyboarded {
 
     weak var coordinator: MainCoordinator?
+    var buyAction: (() -> Void)?
+    var createAccountAction: (() -> Void)?
     
     @IBOutlet weak var product: UISegmentedControl!
     
@@ -19,11 +21,13 @@ class ViewController: UIViewController, Storyboarded {
     }
 
     @IBAction func buyButtonTapped(_ sender: Any) {
-        coordinator?.buyView()
+//        coordinator?.buyView()
+        buyAction?()
     }
     
     @IBAction func createAccountTapped(_ sender: Any) {
-        coordinator?.createAccountView(to: product.selectedSegmentIndex)
+//        coordinator?.createAccountView(to: product.selectedSegmentIndex)
+        createAccountAction?()
     }
     @IBAction func codeBaseVCTapped(_ sender: Any) {
         coordinator?.codeBaseVC()

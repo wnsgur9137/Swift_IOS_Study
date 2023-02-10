@@ -10,6 +10,8 @@
 		6367AF629929F2FDFA8AF014 /* Pods_Test_CoordinatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAA154AAD07EAFA968EA318 /* Pods_Test_CoordinatorTests.framework */; };
 		85A62522ECC5557E8B99EB98 /* Pods_Test_Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FB2B11EEEDD71777721579 /* Pods_Test_Coordinator.framework */; };
 		A81119932995C8D600BBE62D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81119922995C8D600BBE62D /* MainTabBarController.swift */; };
+		A81119D72995E2B200BBE62D /* Buying.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81119D62995E2B200BBE62D /* Buying.swift */; };
+		A81119D92995E2CE00BBE62D /* AccountCreating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81119D82995E2CE00BBE62D /* AccountCreating.swift */; };
 		A88C91E329948AE000B5EA05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C91E229948AE000B5EA05 /* AppDelegate.swift */; };
 		A88C91E529948AE000B5EA05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C91E429948AE000B5EA05 /* SceneDelegate.swift */; };
 		A88C91E729948AE000B5EA05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C91E629948AE000B5EA05 /* ViewController.swift */; };
@@ -54,6 +56,8 @@
 		85FD4269F8CA1893FCB4D7B0 /* Pods-Test_CoordinatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_CoordinatorTests.debug.xcconfig"; path = "Target Support Files/Pods-Test_CoordinatorTests/Pods-Test_CoordinatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		97FB2B11EEEDD71777721579 /* Pods_Test_Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81119922995C8D600BBE62D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		A81119D62995E2B200BBE62D /* Buying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buying.swift; sourceTree = "<group>"; };
+		A81119D82995E2CE00BBE62D /* AccountCreating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreating.swift; sourceTree = "<group>"; };
 		A88C91DF29948AE000B5EA05 /* Test_Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88C91E229948AE000B5EA05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A88C91E429948AE000B5EA05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				A88C91E629948AE000B5EA05 /* ViewController.swift */,
+				A81119D62995E2B200BBE62D /* Buying.swift */,
+				A81119D82995E2CE00BBE62D /* AccountCreating.swift */,
 				A88C921829948D9500B5EA05 /* BuyViewController.swift */,
 				A88C921A29948D9B00B5EA05 /* CreateAccountViewController.swift */,
 				A81119922995C8D600BBE62D /* MainTabBarController.swift */,
@@ -459,12 +465,14 @@
 				A81119932995C8D600BBE62D /* MainTabBarController.swift in Sources */,
 				A88C921D299497BC00B5EA05 /* CodeBaseViewController.swift in Sources */,
 				A88C921F2994D55F00B5EA05 /* BuyCoordinator.swift in Sources */,
+				A81119D72995E2B200BBE62D /* Buying.swift in Sources */,
 				A88C91E329948AE000B5EA05 /* AppDelegate.swift in Sources */,
 				A88C921529948B1D00B5EA05 /* MainCoordinator.swift in Sources */,
 				A88C921B29948D9B00B5EA05 /* CreateAccountViewController.swift in Sources */,
 				A88C91E529948AE000B5EA05 /* SceneDelegate.swift in Sources */,
 				A88C921929948D9500B5EA05 /* BuyViewController.swift in Sources */,
 				A88C921729948BCB00B5EA05 /* Storyboarded.swift in Sources */,
+				A81119D92995E2CE00BBE62D /* AccountCreating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
